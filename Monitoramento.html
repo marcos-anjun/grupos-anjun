@@ -556,7 +556,7 @@ async function salvar(k){
   const em=firebase.firestore.FieldValue.serverTimestamp(),por=eu.nome||eu.usuario||'';
   if(k==='mot')await db.collection(COL).doc('motoristas').set({lista:st.mot,atualizadoEm:em,atualizadoPor:por});
   if(k==='pla')await db.collection(COL).doc('placas').set({lista:st.pla,atualizadoEm:em,atualizadoPor:por});
-  if(k==='bas')await db.collection(COL).doc('bases').set({lista:st.bas.map(b=>[b.c,b.t,b.e,b.ci,b.uf]),info:st.basInfo,atualizadoEm:em,atualizadoPor:por});
+  if(k==='bas')await db.collection(COL).doc('bases').set({lista:st.bas.map(b=>({c:b.c,t:b.t,e:b.e,ci:b.ci,uf:b.uf})),info:st.basInfo,atualizadoEm:em,atualizadoPor:por});
   status('Salvo no Firebase');
  }catch(e){status('Não salvou: '+erroFb(e))}
 }

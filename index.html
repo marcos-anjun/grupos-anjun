@@ -2918,4 +2918,8 @@ window.layoutShow = ()=>{ syncStructure(); fitZoom(); renderAll(); };
 
 
 
+
+<!-- ANJUN: botão de voltar ao menu da Presença (só para quem entrou pelo menu) -->
+<style>#anjun-voltar{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:2147483000;display:flex;gap:6px;font:600 14px/1 Barlow,system-ui,sans-serif}#anjun-voltar a{background:#00A649;color:#fff;text-decoration:none;border-radius:999px;padding:10px 14px;box-shadow:0 4px 14px rgba(0,0,0,.25)}#anjun-voltar a+a{background:#fff;color:#007A36;border:1px solid #00A649}@media print{#anjun-voltar{display:none!important}}</style>
+<script>(function(){try{if(sessionStorage.getItem("anjun-de-presenca")!=="1")return;}catch(e){return;}var d=document.createElement("div");d.id="anjun-voltar";d.innerHTML='<a href="Presenca.html">← Presença</a>'+(/Lark|Feishu/i.test(navigator.userAgent)?'<a href="'+location.href.split('#')[0]+'" target="_blank" rel="noopener">Abrir no navegador ↗</a>':'');document.body.appendChild(d);})();</script>
 </body></html>

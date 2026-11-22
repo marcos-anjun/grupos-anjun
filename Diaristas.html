@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Controle de Diaristas</title>
+<meta name="description" content="Controle de diaristas da Anjun Contagem: registro de diárias das terceirizadas e consulta de bloqueios.">
+<meta property="og:title" content="Controle de Diaristas · Anjun Contagem">
+<meta property="og:description" content="Entre com o usuário e a senha que você recebeu para registrar diárias e consultar bloqueios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcos-anjun.github.io/grupos-anjun/Diaristas.html">
 <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAABECAYAAADtLYW6AAAWgklEQVR4nO2d2W/cR3LHP00OSVEHdVCUZck6LMmRZdPner2xNz6062AXSILkJQ95yVvy5+Qxec6xQIIEARIskOwG66wdx14fsmOL9vqUrfugaEmUrGN4VB6qi13T7N9vhhRlivQUMJiZ39Fdv+5vV1VXVfcPunTHSETuWW4eVhKF5WZgNZGIDAM9QG/8BGAqhHB+WRlbIdQF422SiIwA/UAf0EBBOBs/M8AU0AwhjC8bkyuEGsvNwCqgQWADsJYEylmgGT83gJsi0gghnF02LlcAdcF4GyQi+4At8bNprH/oSWCICMbR5uQR4HL8TIrIAHAthHBxeTi+u6mrphdJIrIT2A7cM9Y/9CNgNzAcPz2oVJwEjo02J/8TmAC+Bi6FEE4sD9d3N3XBuEgSkSeAPWP9Qy8BO4F7gc3AJuLEBfgGOAmcHG1O/gI4D1wAJroqez511fQiSET2oBLxT4BdwAgqEdcB61E1PQWsibesHesfaow2J/8duIXakV3KqAvGBZCIbEMnKRtRAD6ISsQhFIgNVCr2ohOZ/vh7HTA11j90eLQ5+XPg6rfP/d1PPcvNwAqjBjprHhrrH3oB2IGCcj0Kvtzs6UUBuRZV39vH+oeeA9ZFl1CXHHUl48KoD5VyG4F7UKlY14YBGEBBuTlefx11BXXbPqPblowiMiwiW5eCmRVA5sieQW2/6x3c00PyP1p7yx3hboXTUozOPmBQRPrQTpJVHG2wiMpN4ArqqgloO3p70UhIAOyJ9zdRUHcBmdGiwCgiPwEeQ9VVA3Vh9MXPrIgI2uCvAu+GECaWht1lpxIYG+iseQ1J+gXmg20KnUVfRQE58+2wvHJowWAUkR3Ai8CPUMO8QWpY6wSLzU4DZ1CH74qnEML5qAGujzYn3xrrH3oMDQcGVBX3kCShTWYsLHgRODvanHwVjcKsVu2xaFqMZHwIGEX9a72xDJMGpoqm4+dR4F0RObeKpKPZit+gg2w9OklZR9kGt0jMReBcvOfat8LpCqMFgTG6I14A7iNlqVimilEvCZy/gwLyvaVg9m6gEMK4iPSjADuFPu8MSRNsQp99GgXuRPycGm1O/jr+7voZC7TQ2fRe4HlgG0kqmuFuaqmHZD/uBJ4CDqwmv1oI4TRwZbQ5+d/AcRSU51HpdxG1JSdI0vDUaHPyl/H/RAjh3LIwfpdTx5JRRB5BgThMclX0Zpd5QFpe3z7UvvxQRLauooyVK8DAaHPyZWBrjFFfQTN4LDZ9A7UTXyaCNQK5SwXqCIxx0rILlXLrSXZiD62zxpD9FtTZ+wjq8F1NHXGVlJ1zdbQ5+Y/ojHoQfW5z40zGz+X43aUKagvG6NDeBuwHDqANbnahp5I7I6ASdDsqVf/1Nvm9ayhK+ItxncsECsIGKbl2mpi5E0I4c6f4EJHh1TI57MRmHERtxVFSrp6n4D65lDRJuRH4YxSUq4ri+pYmaYZ9LX7bZ/ZORqjuJBA7sfOXctFZJ2p6ELgfnRUPGQ/o6M+jDTlNo26Pe+PvQyJyOYRwbDHMisgu1Ldpi52sjmlaF0JZxsz1EMJYoQyLDd+IfDfitQtKeo2dtQXVFjMkf6OFDU1CzojIRmBjCOHdirJ2o22dmz9Ca9tau28IIbxVKOd7pOUOfZT7xZc9jfo9L7gy9qFt1BuTiM3ZPx0vsXaejc+2FtUAc2XEcraRJrMbSQGDJnAznz90AsYtqGTcGRnIG6kUbzWgDMTjzfj/MeALEZlcyERGRB4Hfgw8TJLOVq91OrSG3q4BH4jI1yGEM1E67QZeAp5GAXQDbeAAnBKRD4DfAqfbqVYReQadmD2AmjHWYZCc/kIKF/bF+/4OeCOEcCr+HwH+CHgmPpvXKMJ8MNrvayKCB6SI/AD4i1jOLAmMJRPK6CTwP8A/OZPsD4DnYjta21pMHpJP2WgKOCIivwohvOOO/yVwCG3rDaimuILa21+KyJvAmRDCl9AZGA8BB2OB1lAGhjxlyp8XWu2n9aiqPwqMo26OTmkD8DjwfXRw+KWg06RG8gPjEvrw60Rkezw3HMt5CpWwBmRB3TGjwKfAeyLyTgjhaA1P24An0AG2mVYtMct8QPai4H8FHSTD8dh6FNA/QDOBfLuWwGjAOhOv1wu1vP2Rpx2kQVAiL1A2A5/ENhK0fQ8BPyQJHx9Rg9T/dtzi7UfNYxKB/Qhp4A/G+2/Gz7n43GMi8jpwshaMIrIXVc97SUDrpdVGzGfQ+X/L6RuKjfUQ8JWIXOtkPbGzW9ahALKJgvGRj1jrvOux3jWo89nSuYbi94BVEb/XoubEflSCDkYev6xgrY+UpzhYKM9oKvJnnWcmhKmvAcfnBlpj2x40RjbQLwP9IrItqsc+FEhr46eHBMYqVS3umkbkbzDen0eUDHiQ+tk8BiHyPgA0IhD74/+1pPa2SNUMOgh2ooGRTcAr7STjXtSls4H5UtEeaJbyWhrfoL2RERt1HwFftanbyHdKj/uYJMoHgOcpuGvsXMg++fEhVNoNo/bQayGEDyuerzR5Kw3QXJP4rB0bsD2F60qS0aSVXTfrrs37qCppw5ft+8nzlPPhPSj+eKku319ei/ln6ENx9QiKi4FOnd4lIHqm8muNUSNjagBN1R8F3qEDiiI/B5YfDNaZVl8+OGYLxzyvecP2otJhDfDnwOU46cp9pF595XX4TvXfXnV7WxdaO9U/W4nnOR6c7Z1LLW8u5eXkx2zCVQKlrzcvJweaALMhhAk3y7ZInb/XnrGBStYdwHPtXDtfkuKouTSpa6jSddbRW1B/5QGYs3XaUV536bwftfkkq2R3+dEfsjLM3t2J+kcfLNRZcnH5OqG1U1s6P4Johla+SuX5+0vta5SDqK6tSu1pg6TKNMjvyyW+H5y4757C/Xb+Fslk2VMLxhDCcWAMNZZ9QoQvvOohc2btdx9qkz0RIzudSue6OttdY+cslt5PSvkq8Q9pIdUTlGPrVpYNslKDQ3nyMQMQY9RN0iSsCpg5zalkN5hz1Zo/Uym9LVftpbZr19fWBhClois7r9Pz59utAWzqxOn9LvAJ2mDeFit9POUNYd99qFh+FF3MlMe3S1RXT5VKzI/5B/fZRnln2XGbeO1GnfU2QbGolA+J5io25yOXWD6x1hJt6yRk1fP7/yXQ5NeU/tuxHAtVWiW/z9p1bpC5+31dXnKaDWp+1T5gTSdgPEX0vaEz1NxQLzVUHfNr0JnUXnTa34lkzMsuNVCdkV4H2JJK9cb6WtIMPOepShpWqUjPk5FXjyUAVB3Pqa7OEg+lsvNjJX5LNCcZ55hJEtKrZT/Zmnd/J2C8Avwf8DkKHHNVWEVV9kmdvdZA7bGXUFXYCeVAr2qg/HzVd15uLsm9cT7o+Yz2nh/l7da0dALOTlV0HVWBulOwL0X9njqR6nNacx4YReRJEflTEdkewzkAJ4C3SRkoFlFZzANYpKIXdT6Pish9HdznG222cCw/77/z4yWJWWXzmjS33SGMcsd2VYfWSeP8+eqeuTS5qGv/TvqmVE4nUrjTa0tap3JgliTjQXQG+TzJUXselY4nUSAtdnVboNVmGEJDajva3FcFLA8GCuerVGLu56vj1wPTky+jqrxO7Wuoj2jl93k7Mb/el1en0nNbvmSL1wEy13b5MV9GqX7PR6tkFJF7ROQB1OVyCPgpMTcvRkqOoYC8VVFJLeodmcPT4qY/RGernbh4Sg/VSZ3t7Ky6yVGgfaeUTJG87CqqUl8l3qomZ7Q5VyrXjuXO7XYRIArH6iRjJxI2gBtZEXAGxl3As6hz2iYYl4FfoLtoTRUqWIjd4We1W9GQ0LY215v9lnv8/W8fyejNzpGdWyiQS0D1x+u0he/cUrtVUYm/kvT0ddTdm1O7PquzNdvxtWDykvFeNDTzADrb3Y6q0E2A+cTG0DUf37RhrI68ijBAPhbrbndPO4M4v7bk1M6lxu0Y73kZVZOCXI3VAbsTyVgaSHZMCufyuqpsbD9oqgZrDvr8XKc0ry+9zbEFdbdsQzvtFvA9dA2LL+ADNOvG2345g510sEmoPjRf8iERub/i2nyiUKI6I7wEEt/oJZ7r7LvS+SrecrWXg6VkBsxm15XsxVI5dbYrtG+7dm0QCvcshoog92B8FFXRm0iZJAeAp0TkYLTppoE30ESHiyT70auqOr9Z/rCW5zeMTpxGK5gvSZocCFZ/1SSmdBzKzuqqxAVPXt1X8Vt1zM/MA+q/vU4KLEzH/7eyMjwocie3VJyr40+IWU9R81kGlI+ZW3m+/nzi2KkkhtZ29YNztgdARA6iNuIe0vZua1GQPI2q0TVodu6raJLDV6QGLFVcB0L/ELaz1z40RFi3NKFOBVWN7pJ09A7YkgHvG6603sffl4OhTvpYB/aJyI4YYgzE7ZVR8BkYbtIKxvwZ8kFSkmpVfOQD08KTE1QDEeYnhsyrzyaizi2Yt4sNdn8MQHpizuLDqM22OWMadHJhaT4hNuBR4Au0sfzsui7YTnaNH+WDqHvnAWCoAMi8EaysOqnn/+funzoJnvNdJWHyyVOVmiY7L6R2s2QB2175Bink6nMBqnjM21Hc/TlVCYU6Ke7r8O3mXWQlXurK8sf9d+hBJd5h1J2zwV1sBW9AJzNb0ED4OArE91DJ2Is6wc3/aJ8Z5oPIYrA5qPrRWfVDqBTOH8p3ulclPlO71FHtVHYpilLqCD+aPU9ebeVl+LSyXHpOhxAm4ucCml3+OSodZ0mbSfVRTbPZ/xzwVW1Qkm4lgFK4RwrfLR8XBqwTGiUKPSjQDqOA8KLUvgfR7OdH0cziEVSFfII24gw6u57uoDFKD2HUQCdPPyXO4B3Z5klmU5WAaFT1sPm5qlGa3z9PMkZVlM/OfVmlMuz4DPPLOod6KS6gA3zKlV/XlriyfHw4B2r+vPn/0sSkqs/yazyV6s3LKtUJEYwP07rqLzfc15CWqm5GQdtA08qOoAuf/NuhfFw3nwg0mO//M2kHKn1fAB6O6WVG62j1M7Y8RFaH1b8GXZHmj9vkQAr8+ewTDz4P+rxOn0I2z1WRlQOFRIEoHcdR0+dl4LPYpmYz2qo8L5HsObwqtw23bBGcj5R54HpJb4mvfSIyEu0830elWXgJ1HNlOlux39WTYyrXOgAzDdR9cwuduFhFHuG9qAq1hNj344NeJ/kdHydtgJS7FNrNtCCtERlAgf97wHERseTL9aiEtuWRpv48eHx5NjGyJanWCLawvirVKX9+k2S5tLG6Syn1/hqY3x6ez3QihDdFZCa2QUDX4wyS9nz0jn1IAO2JALBBamlZJl1znvyz+kFlIC4FC0qq267FtUUDXQMz4vjO6y6BeYYIxv2kRejTpDCdZDePoCvYjpBG61dovuO++DB5h9W5Fvzos29LoHgaeC2E8HZUYzfjfU0089xvNmUjObeLrqI2WDMuVR0hpcDNxPM+LFmKoJg5YCvaPOU5kfZcJTMhl6pVpsRxdNeNSeBFNJdyDa17G83GdriFzsJvxJ3R9qN90CT1nSW0+IGR82qvArEEX/t/i9bVgSWb1FxzfuJ1Ky472Iqab5dp3bHOfnupPUUE4xW009aiam3QMWvM2xbJ+1AH9RchhFMiMo3uTrsLHcm5wV0l6u1cjzs3FRuvP/7eENdRGBiOk942YG8W8KrfA/Ea6pj/LJZpW9ndh85cT6NS04BZ4g93/jyteyp6CdVO8ue2XaVNG9X1uIicQv25z6KaawS1o83lYzvnBrS9CCF8ISLjwMcosGxpbEk6ed4uoIv4zwG2ycFEfGbTPHlSiH3bq0UuoP1z1SYwce3ScVJichNnFtAK6jnJ+PexUkvDb7iK/c030JF4Nv62Dn4//jeVmI/CdmD0ksJvU3zUlrKKyEfAP6O2rdms3g41nmddGd8AZ7NdIiaAXwL/S1rOmbtlchtvBvhtCOFTdzx3ueD+V/0uqe0ixRn2BRE5DbxJWoJq907FZ/k4Wyj2IfC3qG0vtPqAS/0haPDic3fdKeDn6EBuB0ZbD30JBeNncw+sGu1fgN+QNsPyePI8zIHxVVoNYd853i66hTq9W7awCCF8LCITtDayVWqMB9TLf9bZN6WEB2vApq8n/v4vt/DdTxiKK9RQ90nLir4QwgndbnzO+PcTG2+aGM2i7qx8ZeAW1I5e645VSTzbesXUmvHXluI2MMcKzy2l172FEI7GvqjLnveDX9C2nlu/7gbC58wfqLj7hLTu+6btkOHKmQBMXXtNlgcRDIzSWIoXcy9kf+oczAus57Y3OVqil0juQU2WjfF/FRCt0/xs2O9Z0xEt5LmXasezpdpHciHb2HS8WWiXlKLd+X00SDDY5nJo3TRpHLX1FgTG7wotKRij8Wv2ypnVsm8gYCsCB4CfAL+PurkWAsbr6Dr0cdIGUV1ytNSScSaWuQ84LCJTaOOfRg3j5lKYBctEI+jM9s/QAMA6ql05nmZJYDwDXFlFW0kvKS0pGKM/z7YxaaC21Q40ynMDuCIiZ1E/2g3izv93M0Dj5GEHunjsD1FAWgzfO/mrXENmJ15Bl/x2gVhBS24zhhBOogu33oib0j+BRmieQTvlKskZegI4JyJn0M5qEv1otzPRWSqKfs49qLP/MPC7pE2wzNvQTjKCPtcZNGJ1+U7wuhrojk5g4v6GR0Xk12ga2rMk479J2q7uKposcAyVHidEZAi4ZHZntEdv2sxdRLbfyVdYiMgBVAo+j2YSHUDdOdC6brwTuok6o8e7KrqaOm3M26boXxxBJc0o8CTayTccHxY7NqfuGZIz9TRwIYRwPKrOnqV85Znb5PJeVCUfRmPkQ2iS8eZ4qaXB5RGkkoScic/xG+BvQgi/Wip+VyN9a2D0FPeM3oPakntQqbmTtJGmOYf9q84m0RDVOXRSdA5VeRfi99RipU5consw8nIADXneF/+vI4W9LH47S3JCQzUYp9G8z5+FEP56Mbx9l2hZ/IwhhGMichVNtLgPDUcdRDN29pN2cR1Cpen9pBDfFVStfx0/9maqSyJyKV5nEyQf/4S02dB69z2MJiQ8gMZRN5N2xx0kpUJZdMannuVJD+bcbqCgHQfeQvfM7lIbWi7JuNXVbR08gkrIp1BQ7EZnsetR6WQukjyp1lL3r6JAvYa6kSxE6WOqtuv+1vi9i7Rhvc8e8nl4eYpYHtv1YLe9rQfQgfIa8A8hhH9bVEN9x2hZwFiiaAc24mt0X0Rn4YdQqbiX9PZSH7yHBKI8YTef6eYpZnYuj4/7Mv0xO+7LytWzScYpdPeNvwLe7r4rsDO6a8DoKeYe9qIS0Wy3e0m23FZUem4i5fnlCQCefJZ0T3a9B1RJQuZtlN/j48/X0aymI8DPgE+jq6tLHdBdCcacolq3LJn16CsndsfvB1HJuY75+ZgelF6CGshyKVmSiLlTu/RtHoD3gf8AXgkhvLn4J/5u0ooAY07RTbQRBebO+BkmrWK8B52IWO6cLV2wd9mYis/XPuN+V+Ufeht0GrVVj6OTsNeB10MIH93uM34XaUWCMSen1odQ0B1AJadJSwPtVlq3SLZ3k5RyIkuJsgZAW7ZwAfUIvAG8WfGKji51SKsCjDnFTQD6LXcxvv9ub/xsQZfEbkFBai/g2UhKls0XbNmbna6hbqNv0EjRETRq1Bs34+/SbdCqBGM7ci9YHCC9EWqItFVyDkZbCuHfmmpbj8hqSpVbTvp/0HB30pnxTSkAAAAASUVORK5CYII=">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -413,7 +418,7 @@ dialog form.card{border:0}
         </div>
         <label for="dSetor">Setor</label>
         <select id="dSetor">
-          <option>Hub</option><option>Coleta</option><option>Carregamento</option>
+          <option>Hub</option><option>Coleta</option><option>Carregamento</option><option>Tratativa</option><option>Limpeza</option><option>Sorter</option>
         </select>
         <datalist id="listaNomes"></datalist>
         <div id="modoUm">
@@ -576,17 +581,22 @@ dialog form.card{border:0}
   <section class="panel" id="panel-usuarios" hidden>
     <div class="grid">
       <form class="card" id="formUsuario" autocomplete="off">
-        <h2>Novo usuário</h2>
+        <h2 id="tituloUsuario">Novo usuário</h2>
+        <input type="hidden" id="uId">
         <label for="uNome">Nome</label>
         <input id="uNome" required>
         <label for="uUsuario">Usuário <small>(sem espaços, ex.: xd.portaria)</small></label>
         <input id="uUsuario" autocapitalize="none" required>
-        <label for="uSenha">Senha inicial <small>(mínimo 6 caracteres)</small></label>
-        <input id="uSenha" type="text" minlength="6" required>
+        <p class="cpf" id="avisoEditUsuario" hidden style="margin:2px 0 6px;white-space:normal">O usuário (login) e a senha não mudam na edição. Para trocar a senha, a própria pessoa usa "Trocar senha".</p>
+        <div id="boxSenhaUsuario">
+          <label for="uSenha">Senha inicial <small>(mínimo 6 caracteres)</small></label>
+          <input id="uSenha" type="text" minlength="6" required>
+        </div>
         <label for="uPerfil">Acesso</label>
         <select id="uPerfil">
           <option value="empresa">Empresa (lança diárias da terceirizada e consulta)</option>
           <option value="lider">Líder de turno (vê o turno, consulta e bloqueia)</option>
+          <option value="rh">RH Anjun (só consulta: se está bloqueado, quem bloqueou e o motivo)</option>
           <option value="admin">Administrador (vê tudo)</option>
         </select>
         <div id="boxEmpresaUsuario">
@@ -598,15 +608,44 @@ dialog form.card{border:0}
           <select id="uTurno"><option>T1</option><option>T2</option><option>T3</option></select>
         </div>
         <button class="btn primary" type="button" data-submit id="btnCriarUsuario">Criar usuário</button>
+        <button class="btn" type="button" id="btnCancelarUsuario" hidden>Cancelar edição</button>
         <p class="erro" id="erroUsuario" role="alert"></p>
       </form>
       <div>
+        <div class="card" id="boxLinkProprio" style="margin-bottom:14px">
+          <h2>Logins da Presença</h2>
+          <p class="dado" style="margin:0 0 8px">Quem é administrador, coordenador, supervisor, líder ou assistente na Presença já entra aqui com o mesmo usuário e senha. Este botão traz esses logins para a lista abaixo, para você editar o acesso ou desativar.</p>
+          <button class="btn" type="button" id="btnImportarPresenca">Trazer logins da Presença</button>
+          <p class="cpf" id="resImportar" style="white-space:normal;margin:6px 0 14px"></p>
+          <h2>Link para as terceirizadas</h2>
+          <p class="dado" style="margin:0 0 8px">Envie este link junto com o usuário e a senha criados aqui. Ele abre direto no Controle de diaristas, sem passar pela Presença.</p>
+          <input id="linkProprio" readonly value="https://marcos-anjun.github.io/grupos-anjun/Diaristas.html" aria-label="Link do Controle de diaristas">
+          <button class="btn primary" type="button" id="btnCopiarLink">Copiar link</button>
+        </div>
         <div class="tablebox"><table>
           <thead><tr><th>Nome</th><th>Usuário</th><th>Acesso</th><th>Situação</th><th></th></tr></thead>
           <tbody id="tbUsuarios"></tbody>
         </table></div>
       </div>
     </div>
+  </section>
+
+  <!-- AUDITORIA (só administradores): bloqueios, alterações e desbloqueios -->
+  <section class="panel" id="panel-auditoria" hidden>
+    <h2 class="titulo-sec" style="margin-top:0">Auditoria de bloqueios</h2>
+    <p class="dado" style="margin:0 0 12px">Quem bloqueou, alterou e desbloqueou cada diarista. Só administradores veem esta aba.</p>
+    <div class="listhead">
+      <input id="aBusca" placeholder="Buscar diarista, CPF ou usuário" aria-label="Buscar na auditoria">
+      <select id="aAcao" aria-label="Filtrar por ação">
+        <option value="">Todas as ações</option><option>Bloqueou</option><option>Alterou</option><option>Desbloqueou</option>
+      </select>
+      <select id="aEmpresa" aria-label="Filtrar por terceirizada"></select>
+    </div>
+    <div class="summary" id="resumoAud"></div>
+    <div class="tablebox"><table>
+      <thead><tr><th>Data e hora</th><th>Ação</th><th>Diarista</th><th>Bloqueio</th><th>Empresa</th><th>Feito por</th><th>Motivo</th><th>Situação atual</th></tr></thead>
+      <tbody id="tbAud"></tbody>
+    </table></div>
   </section>
 </div>
 </div>
@@ -690,8 +729,8 @@ import {
   createUserWithEmailAndPassword, signOut, updatePassword, reauthenticateWithCredential, EmailAuthProvider
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import {
-  getFirestore, collection, doc, getDoc, onSnapshot, query, where,
-  addDoc, updateDoc, deleteDoc, setDoc, writeBatch, serverTimestamp
+  getFirestore, collection, doc, getDoc, getDocs, onSnapshot, query, where,
+  addDoc, updateDoc, deleteDoc, setDoc, writeBatch, serverTimestamp, arrayUnion
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const $ = id => document.getElementById(id);
@@ -720,7 +759,9 @@ const HORARIOS = { T1: '06:00 às 14:00', T2: '13:00 às 22:00', T3: '21:48 às 
 const horario = turno => HORARIOS[turno] || '';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const empPorId = id => EMPRESAS.find(e => e.id === id);
-const nomeEmp = id => empPorId(id)?.nome || id || '';
+/* Anjun: só para bloqueios de quem não tem terceirizada informada (não tem aba de diárias) */
+const EMPRESAS_BLOQ = [...EMPRESAS, { id: 'anjun', nome: 'Anjun' }];
+const nomeEmp = id => EMPRESAS_BLOQ.find(e => e.id === id)?.nome || id || '';
 const limparUsuario = u => (u || '').trim().toLowerCase();
 const paraEmail = u => { u = limparUsuario(u); return u.includes('@') ? u : `${u}@${DOMINIO}`; };
 const usuarioValido = u => /^[a-z0-9._-]{3,40}$/.test(limparUsuario(u));
@@ -781,9 +822,15 @@ let criandoAdmin = false;
 let diaSel = null;
 const ehAdmin = () => perfil?.perfil === 'admin';
 const ehLider = () => perfil?.perfil === 'lider';
+/* RH da Anjun: só a aba Consulta; vê se está bloqueado, quem bloqueou e o motivo */
+const ehRH = () => perfil?.perfil === 'rh';
+let sigiloNegado = false;
 const podeBloquear = () => ehAdmin() || ehLider();
 /* Motivo e quem bloqueou: administradores e líderes */
 const veMotivo = () => ehAdmin() || ehLider();
+
+/* Perfis da Presença que têm acesso ao Controle de diaristas */
+const MAPA_PRESENCA = { administrador: 'admin', coordenador: 'admin', supervisor: 'admin', lider: 'lider', assistente: 'lider' };
 
 /* ---------- login ---------- */
 async function verificarPrimeiroAcesso() {
@@ -842,11 +889,12 @@ async function entrar(user) {
         $('erroLogin').textContent = 'Este usuário está desativado. Fale com o administrador.'; return;
       }
       perfil = { uid: user.uid, ...s.data() };
+      if (s.data().origem === 'presenca') perfil.viaPresenca = true;
     } else {
       /* Sem cadastro próprio: tenta o login da Presença (mesmo Firebase) */
       const p = await getDoc(doc(db, 'users', user.uid)).catch(() => null);
       const d = p && p.exists() ? p.data() : null;
-      const MAPA = { administrador: 'admin', coordenador: 'admin', supervisor: 'admin', lider: 'lider', assistente: 'lider' };
+      const MAPA = MAPA_PRESENCA;
       if (!d || d.ativo !== true || !MAPA[d.perfil]) {
         mostrar('telaLogin');
         if (d) { $('erroLogin').innerHTML = 'Seu perfil da Presença não tem acesso ao Controle de diaristas. <a href="Presenca.html" style="color:inherit;font-weight:700">Voltar à Presença</a>'; }
@@ -884,24 +932,25 @@ function iniciarApp() {
   pararListeners();
   mostrar('telaApp');
 
-  $('titulo').textContent = ehAdmin() ? 'Controle de Diaristas' : ehLider() ? `Diaristas ${perfil.turno}` : `Diaristas ${nomeEmp(perfil.empresa)}`;
-  $('subtitulo').textContent = `${perfil.nome}, ` + (ehAdmin() ? 'administrador'
+  $('titulo').textContent = ehAdmin() ? 'Controle de Diaristas' : ehRH() ? 'Consulta de Diaristas' : ehLider() ? `Diaristas ${perfil.turno}` : `Diaristas ${nomeEmp(perfil.empresa)}`;
+  $('subtitulo').textContent = `${perfil.nome}, ` + (ehAdmin() ? 'administrador' : ehRH() ? 'RH Anjun'
     : ehLider() ? `líder do ${perfil.turno} (${horario(perfil.turno)})` : `acesso da ${nomeEmp(perfil.empresa)}`);
 
-  const visiveis = ehAdmin() ? EMPRESAS : ehLider() ? [] : EMPRESAS.filter(e => e.id === perfil.empresa);
+  const visiveis = ehAdmin() ? EMPRESAS : (ehLider() || ehRH()) ? [] : EMPRESAS.filter(e => e.id === perfil.empresa);
   $('tabs').innerHTML =
     visiveis.map(e => `<button class="tab" role="tab" data-tab="${e.id}">${esc(e.nome)} <span class="count" data-count="${e.id}">0</span></button>`).join('') +
     (ehLider() ? `<button class="tab" role="tab" data-tab="turno">Meu turno (${perfil.turno}) <span class="count" data-count="turno">0</span></button>` : '') +
     `<button class="tab" role="tab" data-tab="consulta">Consulta</button>` +
     (podeBloquear() ? `<button class="tab bloq" role="tab" data-tab="bloq">Bloqueados <span class="count" data-count="bloq">0</span></button>` : '') +
-    (ehAdmin() ? `<button class="tab" role="tab" data-tab="mes">Planilha do mês</button><button class="tab" role="tab" data-tab="usuarios">Usuários</button>` : '');
+    (ehAdmin() ? `<button class="tab" role="tab" data-tab="mes">Planilha do mês</button><button class="tab" role="tab" data-tab="usuarios">Usuários</button><button class="tab" role="tab" data-tab="auditoria">Auditoria</button>` : '');
   $('tabs').querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => abrirAba(t.dataset.tab)));
 
   const todasOpts = EMPRESAS.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('');
-  $('bEmpresa').innerHTML = todasOpts;
+  const bloqOpts = EMPRESAS_BLOQ.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('');
+  $('bEmpresa').innerHTML = bloqOpts;
   $('tEmpresa').innerHTML = '<option value="">Todas as terceirizadas</option>' + todasOpts;
   $('uEmpresa').innerHTML = EMPRESAS.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('');
-  $('fEmpresaBloq').innerHTML = '<option value="">Todas as empresas</option>' + EMPRESAS.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('');
+  $('fEmpresaBloq').innerHTML = '<option value="">Todas as empresas</option>' + bloqOpts;
   $('fBuscaBloq').placeholder = veMotivo() ? 'Buscar nome, CPF ou motivo' : 'Buscar nome ou CPF';
   $('avisoSigilo').hidden = true;
   $('thBloq').innerHTML = '<tr><th>Dia</th><th>Diarista</th><th>Bloqueio</th><th>Empresa</th>' +
@@ -911,15 +960,17 @@ function iniciarApp() {
   const qDiarias = ehAdmin() ? collection(db, C.diarias)
     : ehLider() ? query(collection(db, C.diarias), where('turno', '==', perfil.turno))
     : query(collection(db, C.diarias), where('empresa', '==', perfil.empresa));
-  unsubs.push(onSnapshot(qDiarias, s => { diarias = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, erroListener));
+  if (!ehRH()) unsubs.push(onSnapshot(qDiarias, s => { diarias = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, erroListener));
   unsubs.push(onSnapshot(collection(db, C.bloq), s => {
     const todos = s.docs.map(d => ({ id: d.id, ...d.data() }));
     bloqueados = todos.filter(b => !b.desbloqueado);      // bloqueios valendo
     desbloqueios = todos.filter(b => b.desbloqueado);     // histórico: quem desbloqueou e quando
     render();
   }, erroListener));
-  if (veMotivo()) {
-    unsubs.push(onSnapshot(collection(db, C.sigilo), s => { sigilo = Object.fromEntries(s.docs.map(d => [d.id, d.data()])); render(); }, erroListener));
+  sigiloNegado = false;
+  if (veMotivo() || ehRH()) {
+    unsubs.push(onSnapshot(collection(db, C.sigilo), s => { sigilo = Object.fromEntries(s.docs.map(d => [d.id, d.data()])); render(); },
+      err => { if (ehRH()) { console.warn('RH sem leitura do motivo', err); sigiloNegado = true; render(); } else erroListener(err); }));
   }
   if (ehAdmin()) {
     const limite = new Date(Date.now() - 90 * 864e5).toLocaleDateString('sv-SE');
@@ -932,10 +983,11 @@ function iniciarApp() {
   $('tData').value = hoje();
   $('lData').value = hoje();
   $('lEmpresa').innerHTML = '<option value="">Todas as terceirizadas</option>' + todasOpts;
+  $('aEmpresa').innerHTML = '<option value="">Todas as empresas</option>' + bloqOpts;
   $('logConsultas').hidden = !ehAdmin();
   $('fMes').value = hoje().slice(0, 7);
   diaSel = hoje();
-  aba = ehLider() ? 'turno' : visiveis[0].id;
+  aba = ehRH() ? 'consulta' : ehLider() ? 'turno' : visiveis[0].id;
   limparBloq();
   abrirAba(aba);
 }
@@ -946,6 +998,7 @@ function abrirAba(nome) {
   $('panel-dias').hidden = !empPorId(nome);
   $('panel-bloq').hidden = nome !== 'bloq';
   $('panel-usuarios').hidden = nome !== 'usuarios';
+  $('panel-auditoria').hidden = nome !== 'auditoria' || !ehAdmin();
   $('panel-mes').hidden = nome !== 'mes';
   $('panel-consulta').hidden = nome !== 'consulta';
   $('panel-turno').hidden = nome !== 'turno';
@@ -957,6 +1010,16 @@ function abrirAba(nome) {
 
 const diariasDaAba = () => diarias.filter(d => d.empresa === aba);
 const quando = ts => { const d = ts?.toDate ? ts.toDate() : null; return d ? `${d.toLocaleDateString('pt-BR')} às ${d.toTimeString().slice(0, 5)}` : ''; };
+/* Histórico de auditoria: fica no documento sigiloso (só administrador e líder leem).
+   Se a gravação falhar, a ação principal já foi feita e a auditoria usa os campos do bloqueio. */
+async function registrarAuditoria(id, acao, b) {
+  try {
+    await setDoc(doc(db, C.sigilo, id), { historico: arrayUnion({
+      acao, por: perfil.nome, login: perfil.usuario || '', em: new Date().toISOString(),
+      bloqueio: rotuloBloq(b), data: b.data || ''
+    }) }, { merge: true });
+  } catch (err) { console.warn('Auditoria não gravada', err); }
+}
 const motivoDe = b => sigilo[b.id]?.motivo || '';
 const respDe = b => sigilo[b.id]?.responsavel || '';
 
@@ -1055,7 +1118,7 @@ function limparDiaria(manter) {
 }
 
 /* ---------- registro rápido ---------- */
-const SETORES = ['Hub', 'Coleta', 'Carregamento'];
+const SETORES = ['Hub', 'Coleta', 'Carregamento', 'Tratativa', 'Limpeza', 'Sorter'];
 let modo = 'um';
 const minutosAgora = () => { const d = new Date(); return d.getHours() * 60 + d.getMinutes(); };
 /* T1 06:00–13:00, T2 13:00–21:48, T3 21:48–06:00 (na sobreposição vale o turno que está começando) */
@@ -1251,8 +1314,9 @@ $('formBloq').addEventListener('submit', async e => {
     const batch = writeBatch(db);
     if (id) {
       batch.update(doc(db, C.bloq, id), { ...pub, editadoPor: perfil.nome, editadoEm: serverTimestamp() });
-      batch.set(doc(db, C.sigilo, id), sig);
+      batch.set(doc(db, C.sigilo, id), sig, { merge: true });
       await batch.commit();
+      await registrarAuditoria(id, 'Alterou', pub);
       toast('Bloqueio atualizado');
     } else {
       const ja = bloqueiosDe(pub.nome, pub.cpf).find(b => tipoBloq(b) === 'portaria' || (pub.tipo === 'turno' && b.turno === pub.turno));
@@ -1261,6 +1325,7 @@ $('formBloq').addEventListener('submit', async e => {
       batch.set(ref, { ...pub, criadoPor: perfil.nome, criadoEm: serverTimestamp() });
       batch.set(doc(db, C.sigilo, ref.id), sig);
       await batch.commit();
+      await registrarAuditoria(ref.id, 'Bloqueou', pub);
       toast('Diarista bloqueado');
     }
     limparBloq();
@@ -1292,6 +1357,54 @@ function limparBloq() {
 $('btnCancelarBloq').addEventListener('click', limparBloq);
 
 /* ---------- usuários ---------- */
+function resetFormUsuario() {
+  $('formUsuario').reset(); $('uId').value = '';
+  $('tituloUsuario').textContent = 'Novo usuário';
+  $('btnCriarUsuario').textContent = 'Criar usuário';
+  $('btnCancelarUsuario').hidden = true; $('avisoEditUsuario').hidden = true;
+  $('boxSenhaUsuario').hidden = false; $('uSenha').required = true; $('uUsuario').readOnly = false;
+  $('erroUsuario').textContent = '';
+  $('uPerfil').dispatchEvent(new Event('change'));
+}
+function editarUsuario(u) {
+  $('uId').value = u.uid; $('uNome').value = u.nome || ''; $('uUsuario').value = u.usuario || '';
+  $('uUsuario').readOnly = true; $('boxSenhaUsuario').hidden = true; $('uSenha').required = false;
+  $('uPerfil').value = u.perfil || 'empresa';
+  if (u.empresa && u.perfil === 'empresa') $('uEmpresa').value = u.empresa;
+  if (u.turno) $('uTurno').value = u.turno;
+  $('uPerfil').dispatchEvent(new Event('change'));
+  $('tituloUsuario').textContent = `Editar ${u.nome}`;
+  $('btnCriarUsuario').textContent = 'Salvar alterações';
+  $('btnCancelarUsuario').hidden = false; $('avisoEditUsuario').hidden = false;
+  $('erroUsuario').textContent = '';
+  $('uNome').focus();
+}
+$('btnCancelarUsuario').addEventListener('click', resetFormUsuario);
+
+/* Traz para o Controle os logins da Presença que têm acesso (mesma conta, mesma senha) */
+$('btnImportarPresenca').addEventListener('click', async () => {
+  if (!ehAdmin()) return;
+  $('resImportar').textContent = 'Lendo os logins da Presença…';
+  try {
+    const s = await getDocs(collection(db, 'users'));
+    const ja = new Set(usuarios.map(u => u.uid));
+    const novos = s.docs.map(d => ({ uid: d.id, ...d.data() }))
+      .filter(d => d.ativo === true && MAPA_PRESENCA[d.perfil] && !ja.has(d.uid));
+    if (!novos.length) { $('resImportar').textContent = 'Nenhum login novo: todos os logins da Presença com acesso já estão na lista.'; return; }
+    if (!await confirmar(`Trazer ${novos.length} login(s) da Presença para o Controle?\n\n` +
+      novos.map(d => `• ${d.nome} (${d.usuario || 'sem usuário'}) → ${MAPA_PRESENCA[d.perfil] === 'admin' ? 'Administrador' : 'Líder'}`).join('\n') +
+      `\n\nEles continuam entrando com o mesmo usuário e senha da Presença.`)) { $('resImportar').textContent = ''; return; }
+    const b = writeBatch(db);
+    novos.forEach(d => b.set(doc(db, C.usuarios, d.uid), {
+      nome: d.nome || d.usuario || '', usuario: d.usuario || '', perfil: MAPA_PRESENCA[d.perfil], empresa: '',
+      turno: MAPA_PRESENCA[d.perfil] === 'lider' ? String((d.turnos || [])[0] || 't1').toUpperCase() : '',
+      ativo: true, origem: 'presenca', criadoPor: perfil.nome, criadoEm: serverTimestamp()
+    }));
+    await b.commit();
+    $('resImportar').textContent = `${novos.length} login(s) da Presença adicionados à lista.`;
+    toast('Logins da Presença adicionados');
+  } catch (err) { $('resImportar').textContent = 'Não foi possível ler os logins da Presença: ' + msgErro(err); }
+});
 $('uPerfil').addEventListener('change', () => {
   $('boxEmpresaUsuario').hidden = $('uPerfil').value !== 'empresa';
   $('boxTurnoUsuario').hidden = $('uPerfil').value !== 'lider';
@@ -1301,9 +1414,22 @@ $('formUsuario').addEventListener('submit', async e => {
   if (!ehAdmin()) return;
   const nome = $('uNome').value.trim(), usuario = limparUsuario($('uUsuario').value), senha = $('uSenha').value;
   const tipo = $('uPerfil').value;
-  const empresa = tipo === 'empresa' ? $('uEmpresa').value : '';
+  const empresa = tipo === 'empresa' ? $('uEmpresa').value : tipo === 'rh' ? 'anjun' : '';
   const turno = tipo === 'lider' ? $('uTurno').value : '';
   $('erroUsuario').textContent = '';
+  const editId = $('uId').value;
+  if (editId) {
+    if (!nome) return $('erroUsuario').textContent = 'Informe o nome.';
+    if (editId === perfil.uid && tipo !== 'admin') return $('erroUsuario').textContent = 'Você não pode tirar o seu próprio acesso de administrador.';
+    $('btnCriarUsuario').disabled = true;
+    try {
+      await updateDoc(doc(db, C.usuarios, editId), { nome, perfil: tipo, empresa, turno, editadoPor: perfil.nome, editadoEm: serverTimestamp() });
+      toast('Usuário atualizado');
+      resetFormUsuario();
+    } catch (err) { $('erroUsuario').textContent = msgErro(err); }
+    $('btnCriarUsuario').disabled = false;
+    return;
+  }
   if (!usuarioValido(usuario)) return $('erroUsuario').textContent = 'Use de 3 a 40 caracteres: letras, números, ponto, hífen ou sublinhado.';
   $('btnCriarUsuario').disabled = true;
   try {
@@ -1373,8 +1499,13 @@ document.addEventListener('click', async e => {
       const b = bloqueados.find(x => x.id === id);
       if (await confirmar(`Desbloquear ${b.nome}? O bloqueio sai da lista e fica no histórico da Consulta, com quem desbloqueou.`)) {
         await updateDoc(doc(db, C.bloq, id), { desbloqueado: true, desbloqueadoPor: perfil.nome, desbloqueadoEm: serverTimestamp() });
+        await registrarAuditoria(id, 'Desbloqueou', b);
         toast('Diarista desbloqueado');
       }
+    }
+    if (acao === 'editU' && ehAdmin()) {
+      const u = usuarios.find(x => x.uid === id);
+      if (u) editarUsuario(u);
     }
     if (acao === 'ativar' || acao === 'desativar') {
       const u = usuarios.find(x => x.uid === id);
@@ -1407,6 +1538,7 @@ function render() {
   if (empPorId(aba)) renderDias();
   if (aba === 'bloq') renderBloq();
   if (aba === 'usuarios') renderUsuarios();
+  if (aba === 'auditoria' && ehAdmin()) renderAuditoria();
   if (aba === 'mes') renderMes();
   if (aba === 'consulta') { renderConsulta(); if (ehAdmin()) renderLog(); }
   if (aba === 'turno') renderTurno();
@@ -1515,13 +1647,57 @@ function renderBloq() {
     : `<tr><td colspan="${4 + (veMotivo() ? 2 : 0) + (ehAdmin() ? 1 : 0)}" class="empty">${bloqueados.length ? 'Nenhum bloqueio com esses filtros.' : 'Nenhum diarista bloqueado.'}</td></tr>`;
 }
 
+/* ---------- auditoria (só administradores) ---------- */
+['aBusca', 'aAcao', 'aEmpresa'].forEach(i => $(i).addEventListener('input', render));
+const tsIso = ts => ts?.toDate ? ts.toDate().toISOString() : '';
+function eventosAuditoria() {
+  const ev = [];
+  [...bloqueados, ...desbloqueios].forEach(b => {
+    const hist = sigilo[b.id]?.historico || [];
+    const tem = a => hist.some(h => h.acao === a);
+    hist.forEach(h => ev.push({ b, acao: h.acao, por: h.por, login: h.login, em: h.em }));
+    // Registros antigos (antes do histórico) vêm dos campos do próprio bloqueio
+    if (!tem('Bloqueou') && b.criadoPor) ev.push({ b, acao: 'Bloqueou', por: b.criadoPor, em: tsIso(b.criadoEm) });
+    if (!tem('Alterou') && b.editadoPor) ev.push({ b, acao: 'Alterou', por: b.editadoPor, em: tsIso(b.editadoEm) });
+    if (!tem('Desbloqueou') && b.desbloqueadoPor) ev.push({ b, acao: 'Desbloqueou', por: b.desbloqueadoPor, em: tsIso(b.desbloqueadoEm) });
+  });
+  return ev.sort((x, y) => (y.em || '').localeCompare(x.em || ''));
+}
+function renderAuditoria() {
+  const q = norm($('aBusca').value), qd = digits($('aBusca').value), qa = $('aAcao').value, qe = $('aEmpresa').value;
+  const todos = eventosAuditoria();
+  const lista = todos.filter(e => (!qa || e.acao === qa) && (!qe || e.b.empresa === qe) &&
+    (!q || norm(e.b.nome).includes(q) || norm(e.por).includes(q) || (qd && digits(e.b.cpf).includes(qd))));
+  const conta = a => todos.filter(e => e.acao === a).length;
+  $('resumoAud').innerHTML = ['Bloqueou', 'Alterou', 'Desbloqueou']
+    .map(a => `<span class="chip"><b>${conta(a)}</b>${a === 'Bloqueou' ? 'bloqueios' : a === 'Alterou' ? 'alterações' : 'desbloqueios'}</span>`).join('');
+  const tag = a => a === 'Desbloqueou' ? '<span class="tag">Desbloqueou</span>' : a === 'Bloqueou' ? '<span class="tag bad">Bloqueou</span>' : '<span class="tag neutro">Alterou</span>';
+  const dh = iso => { if (!iso) return '—'; const d = new Date(iso); return `${d.toLocaleDateString('pt-BR')} <span class="cpf">${d.toTimeString().slice(0, 5)}</span>`; };
+  $('tbAud').innerHTML = lista.length ? lista.slice(0, 1000).map(e => `<tr>
+      <td>${dh(e.em)}</td><td>${tag(e.acao)}</td>
+      <td>${esc(e.b.nome)}${e.b.cpf ? `<div class="cpf">${esc(e.b.cpf)}</div>` : ''}</td>
+      <td>${esc(rotuloBloq(e.b))}<div class="cpf">desde ${fmtData(e.b.data)}</div></td>
+      <td>${esc(nomeEmp(e.b.empresa))}</td>
+      <td><b>${esc(e.por || '—')}</b>${e.login ? `<div class="cpf">${esc(e.login)}</div>` : ''}</td>
+      <td class="motivo">${esc(motivoDe(e.b))}${respDe(e.b) ? `<div class="cpf">Responsável: ${esc(respDe(e.b))}</div>` : ''}</td>
+      <td>${e.b.desbloqueado ? '<span class="tag">Desbloqueado</span>' : '<span class="tag bad">Bloqueado</span>'}</td>
+    </tr>`).join('')
+    : `<tr><td colspan="8" class="empty">${todos.length ? 'Nada encontrado com esses filtros.' : 'Nenhum bloqueio ou desbloqueio registrado ainda.'}</td></tr>`;
+}
+
+$('btnCopiarLink').addEventListener('click', async () => {
+  const v = $('linkProprio').value;
+  try { await navigator.clipboard.writeText(v); toast('Link copiado'); }
+  catch { $('linkProprio').select(); document.execCommand('copy'); toast('Link copiado'); }
+});
+
 function renderUsuarios() {
   const lista = [...usuarios].sort((a, b) => (b.ativo - a.ativo) || a.nome.localeCompare(b.nome));
   $('tbUsuarios').innerHTML = lista.map(u => `<tr class="${u.ativo ? '' : 'inativo'}">
-      <td>${esc(u.nome)}</td><td>${esc(u.usuario)}</td>
-      <td>${u.perfil === 'admin' ? 'Administrador' : u.perfil === 'lider' ? 'Líder ' + esc(u.turno) : 'Empresa ' + esc(nomeEmp(u.empresa))}</td>
+      <td>${esc(u.nome)}${u.origem === 'presenca' ? '<div class="cpf">login da Presença</div>' : ''}</td><td>${esc(u.usuario)}</td>
+      <td>${u.perfil === 'admin' ? 'Administrador' : u.perfil === 'lider' ? 'Líder ' + esc(u.turno) : u.perfil === 'rh' ? 'RH Anjun (só consulta)' : 'Empresa ' + esc(nomeEmp(u.empresa))}</td>
       <td>${u.ativo ? '<span class="tag">Ativo</span>' : '<span class="tag neutro">Desativado</span>'}</td>
-      <td class="act">${u.uid === perfil.uid ? '' : u.ativo
+      <td class="act"><button class="btn" data-acao="editU" data-id="${u.uid}">Editar</button> ${u.uid === perfil.uid ? '' : u.ativo
         ? `<button class="btn" data-acao="desativar" data-id="${u.uid}">Desativar</button>`
         : `<button class="btn" data-acao="ativar" data-id="${u.uid}">Reativar</button>`}</td>
     </tr>`).join('') || '<tr><td colspan="5" class="empty">Nenhum usuário.</td></tr>';
@@ -1824,7 +2000,10 @@ function renderConsulta() {
       ${tipoBloq(b) === 'turno' ? `<p><b>Não pode trabalhar no ${b.turno} (${horario(b.turno)}).</b> Liberado para os outros turnos.</p>` : '<p><b>Não pode entrar na unidade em nenhum turno.</b></p>'}
       <p><strong>${esc(b.nome)}</strong>${b.cpf ? ` <span class="dado">CPF ${esc(b.cpf)}</span>` : ''}</p>
       <p class="dado">Bloqueado em <b>${fmtData(b.data)}</b>, veio pela <b>${esc(nomeEmp(b.empresa))}</b></p>
-      ${veMotivo()
+      ${ehRH()
+        ? `<p class="dado">Motivo: <b>${sigiloNegado ? 'sem permissão para ver (fale com o administrador)' : esc(motivoDe(b) || '—')}</b></p>
+           <p class="dado">Bloqueado por: <b>${esc(respDe(b) || b.criadoPor || '—')}</b></p>${infoUsuarios(b)}`
+        : veMotivo()
         ? `<p class="dado">Motivo: <b>${esc(motivoDe(b))}</b></p><p class="dado">Bloqueado por: <b>${esc(respDe(b))}</b></p>${infoUsuarios(b)}`
         : '<p class="dado">Procure o administrador ou o líder do turno para mais informações.</p>'}
     </div>`).join('');
